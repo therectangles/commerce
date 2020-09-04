@@ -533,6 +533,7 @@ Craft.Commerce.OrderIndex = Craft.BaseElementIndex.extend({
         this.base(elementType, $container, settings);
 
         Craft.ui.createDateRangePicker({
+            selected: 'thisMonth',
             onChange: function(startDate, endDate) {
                 this.startDate = startDate;
                 this.endDate = endDate;
